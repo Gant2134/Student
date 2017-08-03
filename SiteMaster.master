@@ -1,0 +1,80 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="SiteMaster.master.cs" Inherits="SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Master</title>
+    <style>
+        .left 
+        {
+            float: left;
+        }
+        .right
+        {
+            float:right;
+
+        }
+    </style>
+
+  
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+            <asp:Panel ID="infoPnl" runat="server" CssClass ="left" Height="101px" Width="352px" BackColor="Black">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:Label ID="tblNamelbl" runat="server" ForeColor="#66FF33"></asp:Label>
+                <br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:Label ID="NumEntrieslbl" runat="server" ForeColor="Lime"></asp:Label>
+            </asp:Panel>
+            <asp:Panel ID="NavPnl" runat="server" CssClass="right" Width="193px" Height="164px" BackColor="Black">
+                <asp:Button ID="StuRosterbtn" runat="server" OnClick="StuRosterbtn_Click" Text="Student Roster" Width="192px" />
+                <br />
+                <asp:Button ID="ClsRoster" runat="server" OnClick="ClsRoster_Click" Text="Class Roster" Width="192px" />
+                <br />
+                <asp:Button ID="stuclsassoc" runat="server" OnClick="stuclsassoc_Click" Text="Student/Class Assoc." Width="192px" />
+                <br />
+                <asp:Button ID="InsRosterbtn" runat="server" Text="Instructor Roster" Width="192px" />
+                <asp:Button ID="Homebtn" runat="server" OnClick="Homebtn_Click" Text="Home" Width="192px" />
+                <asp:Button ID="mngstubtn" runat="server" OnClick="mngstubtn_Click" Text="Manage Student" Width="190px" />
+            </asp:Panel>        
+            <p>
+                <br />
+            </p>
+            <p>
+                &nbsp;</p>
+            <p>
+                &nbsp;</p>
+            <p>
+            </p>           
+        <asp:ContentPlaceHolder id="cphMain" runat="server">
+            <p>
+                <br />
+            </p>
+            <p>
+            </p>
+            <p>
+            </p>
+            <p>
+            </p>
+            <p>
+            </p>
+            <p>
+            </p>
+            <p>
+            </p>
+            <p>
+            </p>
+            <p>
+            </p>
+            <p>
+            </p>
+        </asp:ContentPlaceHolder>
+         <p>
+         </p>
+    </div>
+    </form>
+</body>
+</html>
