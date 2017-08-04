@@ -22,7 +22,7 @@ public partial class StudentRoster : System.Web.UI.Page
     {
         ContentPlaceHolder cphMain
                     = (ContentPlaceHolder)Master.FindControl("cphMain");
-        Table t = Bookie.DisplayTable("Student");
+        Table t = Bookie.BuildTable("Student");
         cphMain.Controls.Add(t);
     }
 

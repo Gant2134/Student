@@ -46,7 +46,7 @@ public partial class SiteMaster : System.Web.UI.MasterPage
 
     protected void stuclsassoc_Click(object sender, EventArgs e)
     {
-
+        Response.Redirect("studentclassassoc.aspx");
     }
 
     protected void Homebtn_Click(object sender, EventArgs e)
